@@ -14,7 +14,11 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 import com.example.recipeapp.ui.screens.HomeScreen
+import com.example.recipeapp.ui.screens.LoginScreen
 import com.example.recipeapp.ui.theme.RecipeAppTheme
 import com.example.recipeapp.ui.viewmodel.RecipeViewModel
 
@@ -29,11 +33,21 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    HomeScreen(recipeViewModel = recipeViewModel)
+                    val navController = rememberNavController()
+                    NavHost(navController = navController, Routes.LoginScreen, builder = {
+                        composable(Routes.LoginScreen) {
+                            LoginScreen(navController)
+                        }
+                        composable(Routes.HomeScreen) {
+                            HomeScreen(recipeViewModel = recipeViewModel)
+                        }
+                    })
                 }
             }
         }
     }
 }
+
+
 
 

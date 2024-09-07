@@ -29,7 +29,7 @@ fun SuccessComponent(
                 .shadow(20.dp)
         ){
             Text(
-                text = "Food Recipes",
+                text = "A2K Food Recipes",
                 fontWeight = FontWeight(900),
                 fontFamily = FontFamily.Cursive,
                 fontSize = 32.sp,

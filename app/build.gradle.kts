@@ -73,4 +73,7 @@ dependencies {
     implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.2")
     implementation("com.google.code.gson:gson:2.8.9")
     implementation("io.coil-kt:coil-compose:2.4.0")
+    implementation("androidx.navigation:navigation-compose:2.8.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.5")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.5")
 }
