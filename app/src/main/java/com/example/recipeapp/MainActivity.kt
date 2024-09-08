@@ -17,6 +17,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.recipeapp.ui.components.SuccessComponent
 import com.example.recipeapp.ui.screens.HomeScreen
 import com.example.recipeapp.ui.screens.LoginScreen
 import com.example.recipeapp.ui.theme.RecipeAppTheme
