@@ -1,6 +1,7 @@
 package com.example.recipeapp
 
 object Routes {
-    var LoginScreen = "Login"
+    var LoginnScreen = "Login"
     var HomeScreen = "Home"
+    var StartScreen = "Start"
 }

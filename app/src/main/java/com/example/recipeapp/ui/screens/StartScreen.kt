@@ -1,6 +1,5 @@
 package com.example.recipeapp.ui.screens
 
-import android.widget.Space
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -10,8 +9,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Button
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -20,7 +17,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontFamily
-import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -45,7 +41,7 @@ fun LoginScreen(
             modifier = Modifier
                 .size(1000.dp),
             contentScale = ContentScale.FillHeight,
-            alpha = 0.7f
+            alpha = 1.1f
         )
         Column(
             modifier = Modifier
@@ -54,7 +50,7 @@ fun LoginScreen(
             verticalArrangement = Arrangement.Bottom
         ) {
             Image(
-                painter = painterResource(id = R.drawable.recipe),
+                painter = painterResource(id = R.drawable.food_recipee1),
                 contentDescription = null,
                 modifier = modifier
                     .size(200.dp)
@@ -67,9 +63,9 @@ fun LoginScreen(
                 color = Color.White
             )
             Spacer(modifier = modifier.padding(20.dp))
-            Button(onClick = { navController.navigate(Routes.HomeScreen) }) {
+            Button(onClick = { navController.navigate(Routes.LoginnScreen) }) {
                 Text(
-                    "GET STARTED",
+                    "LOGIN",
                     fontFamily = FontFamily.Serif
                 )
                 Size(20, 20)
